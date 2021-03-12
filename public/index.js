@@ -1,3 +1,13 @@
+//if we can find a serviceworker file, register and use it
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+  });
+}
+
 let transactions = [];
 let myChart;
 
