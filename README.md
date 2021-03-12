@@ -7,7 +7,7 @@ service-worker.js
 This is the code that will cache information in browser while offline. 
 
 db.js
-
+Handles offline data and moves it from cache to to db when connected
 
 index.js
 updated to call service worker.
